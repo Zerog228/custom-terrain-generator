@@ -13,7 +13,9 @@ import com.sk89q.worldedit.math.BlockVector3;
 import com.sk89q.worldedit.math.transform.AffineTransform;
 import com.sk89q.worldedit.session.ClipboardHolder;
 import org.bukkit.Bukkit;
+import org.bukkit.Chunk;
 import org.bukkit.Location;
+import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.LimitedRegion;
@@ -68,12 +70,12 @@ public class CustomChunkPopulator extends BlockPopulator {
                                             if (realTemperature >= temperature) {
                                                 if (biomes.indexOf(biome) + 1 < biomes.size() && realTemperature < biomeToTemp.get(biomes.get(biomes.indexOf(biome) + 1)).keySet().stream().toList().get(0)) {
                                                     //blocks
-                                                    //placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
+                                                    placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
                                                     break;
                                                 }
                                                 if (biomes.indexOf(biome) + 1 == biomes.size()) {
                                                     //blocks
-                                                    //placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
+                                                    placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
                                                     break;
                                                 }
                                             }
@@ -88,12 +90,12 @@ public class CustomChunkPopulator extends BlockPopulator {
                                             if (realTemperature >= temperature) {
                                                 if (biomes.indexOf(biome) + 1 < biomes.size() && realTemperature < biomeToTemp.get(biomes.get(biomes.indexOf(biome) + 1)).keySet().stream().toList().get(0)) {
                                                     //blocks
-                                                    //placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
+                                                    placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
                                                     break;
                                                 }
                                                 if (biomes.indexOf(biome) + 1 == biomes.size()) {
                                                     //blocks
-                                                    //placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
+                                                    placeTree(biomeToTrees, biome, chunkX, chunkZ, x, z, y);
                                                     break;
                                                 }
                                             }

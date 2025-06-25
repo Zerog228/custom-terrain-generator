@@ -267,10 +267,10 @@ public class CustomChunkGenerator extends ChunkGenerator {
         }
     }
 
-    //@Override
-    //public @NotNull List<BlockPopulator> getDefaultPopulators(@NotNull World world) {
-    //    return Arrays.asList(new CustomChunkPopulator());
-    //}
+    @Override
+    public @NotNull List<BlockPopulator> getDefaultPopulators(@NotNull World world) {
+        return Arrays.asList(new CustomChunkPopulator());
+    }
 
     @Override
     public boolean shouldGenerateBedrock() {

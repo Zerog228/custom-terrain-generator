@@ -18,7 +18,7 @@ public class CustomConfig {
     }
 
     public static void setup(){
-        file = new File(Bukkit.getServer().getPluginManager().getPlugin("UltimateGenerator").getDataFolder(), "customconfig.yml");
+        file = new File(Bukkit.getServer().getPluginManager().getPlugin("UltimateGenerator").getDataFolder(), "config.yml");
         try{
             if(!file.exists()){
                 file.createNewFile();

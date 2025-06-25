@@ -48,8 +48,8 @@ ground_level:
           - GRASS_BLOCK
         decoration_rarity: 5
         decorations:
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - TALL_GRASS
       swamp:
         min_temperature: -0.3
@@ -63,7 +63,7 @@ ground_level:
           - GRASS_BLOCK
         decoration_rarity: 5
         decorations:
-          - GRASS
+          - SHORT_GRASS
           - TALL_GRASS
           - TALL_GRASS
           - TALL_GRASS
@@ -89,11 +89,11 @@ ground_level:
           - GRASS_BLOCK
         decoration_rarity: 6
         decorations:
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - TALL_GRASS
           - TALL_GRASS
           - BIG_DRIPLEAF
@@ -118,8 +118,8 @@ ground_level:
           - GRASS_BLOCK
         decoration_rarity: 6
         decorations:
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - TALL_GRASS
           - BIG_DRIPLEAF
           - MOSS_CARPET
@@ -186,17 +186,17 @@ ground_level:
         decorations:
           - STONE_BUTTON
           - OAK_BUTTON
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - MOSS_CARPET
           - MOSS_CARPET
           - MOSS_CARPET
@@ -297,8 +297,8 @@ ground_level:
           - SNOW
           - SNOW
           - OAK_BUTTON
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
         trees_rarity: 800
         trees:
           - COLD_TREE_1
@@ -315,12 +315,12 @@ ground_level:
         decorations:
           - OAK_BUTTON
           - BIRCH_BUTTON
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - PINK_TULIP
           - DANDELION
           - BLUE_ORCHID
@@ -350,8 +350,8 @@ ground_level:
         decoration_rarity: 6
         decorations:
           - OAK_BUTTON
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - MOSS_CARPET
           - MOSS_CARPET
         trees_rarity: 1400
@@ -380,7 +380,7 @@ ground_level:
         decoration_rarity: 4
         decorations:
           - STONE_BUTTON
-          - GRASS
+          - SHORT_GRASS
           - TALL_GRASS
           - MOSS_CARPET
           - MOSS_CARPET
@@ -524,10 +524,10 @@ ground_level:
           - MOSS_CARPET
           - MOSS_CARPET
           - MOSS_CARPET
-          - GRASS
-          - GRASS
-          - GRASS
-          - GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
+          - SHORT_GRASS
           - AZALEA
         trees_rarity: 1200 #blocks per tree
         trees:
@@ -556,7 +556,7 @@ ground_level:
           - MOSS_CARPET
           - MOSS_CARPET
           - BIRCH_BUTTON
-          - GRASS
+          - SHORT_GRASS
           - TALL_GRASS
         trees_rarity: 1000
         trees:

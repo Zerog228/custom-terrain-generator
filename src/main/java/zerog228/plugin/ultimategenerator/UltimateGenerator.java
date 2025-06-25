@@ -2,6 +2,7 @@ package zerog228.plugin.ultimategenerator;
 
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import org.bukkit.Bukkit;
+import org.bukkit.Material;
 import org.bukkit.Server;
 import org.bukkit.generator.BiomeProvider;
 import org.bukkit.generator.ChunkGenerator;
@@ -70,6 +71,8 @@ public final class UltimateGenerator extends JavaPlugin {
     public ChunkGenerator getDefaultWorldGenerator(String worldName, String id) {
         return new CustomChunkGenerator(); // Return an instance of the chunk generator we want to use.
     }
+
+    
 
     @Override
     public @Nullable
