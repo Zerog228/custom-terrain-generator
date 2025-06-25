@@ -1,0 +1,12 @@
+name: UltimateGenerator
+version: '${project.version}'
+main: zerog228.plugin.ultimategenerator.UltimateGenerator
+api-version: 1.19
+authors: [ Zerog228, ErRoR_SINNER, eric_sx ]
+description: Ultimate test generator for TetsCraft
+load: STARTUP
+commands:
+  ultimate_config_reload:
+    description: reloads config
+    permission: ultimate_generator.admin
+    usage: /<command>

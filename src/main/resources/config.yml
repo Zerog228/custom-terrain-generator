@@ -1,0 +1,966 @@
+MIN_Y: 61
+MAX_Y: 320
+WATER_LEVEL: 60
+COLD_OCEAN_NUMBER: -0.4
+WARM_OCEAN_NUMBER: 0.6
+UNDERGROUND_LEVEL_THICKNESS: 12
+SEED: 25566
+ground_level:
+  level_0:
+    min_height: 60
+    biomes:
+      frozen_beach:
+        min_temperature: -1.0
+        biome: SNOWY_BEACH
+        blocks:
+          - SAND
+          - ANDESITE
+          - ANDESITE
+        decoration_rarity: 60
+        decorations:
+          - STONE_BUTTON
+      frozen_beach_to_beach:
+        min_temperature: -0.7
+        biome: SNOWY_BEACH
+        blocks:
+          - SAND
+          - ANDESITE
+        decoration_rarity: 60
+        decorations:
+          - STONE_BUTTON
+      beach:
+        min_temperature: -0.6
+        biome: BEACH
+        blocks:
+          - SAND
+        decoration_rarity: 36
+        decorations:
+          - BIRCH_BUTTON
+          - OAK_BUTTON
+          - STONE_BUTTON
+      beach_to_swamp:
+        biome: SWAMP
+        min_temperature: -0.4
+        blocks:
+          - SAND
+          - SAND
+          - SAND
+          - GRASS_BLOCK
+        decoration_rarity: 5
+        decorations:
+          - GRASS
+          - GRASS
+          - TALL_GRASS
+      swamp:
+        min_temperature: -0.3
+        biome: SWAMP
+        blocks:
+          - COARSE_DIRT
+          - MUD
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 5
+        decorations:
+          - GRASS
+          - TALL_GRASS
+          - TALL_GRASS
+          - TALL_GRASS
+          - BIG_DRIPLEAF
+          - MOSS_CARPET
+        trees_rarity: 500
+        trees:
+          - SWAMP_TREE_1
+          - SWAMP_TREE_1
+          - SWAMP_TREE_1
+          - SWAMP_TREE_2
+          - SWAMP_TREE_2
+          - SWAMP_TREE_2
+          - MUSHROOM_1
+          - MUSHROOM_2
+      swamp_to_warm:
+        min_temperature: 0.6
+        biome: SWAMP
+        blocks:
+          - MUD
+          - MUD
+          - MUD
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - TALL_GRASS
+          - TALL_GRASS
+          - BIG_DRIPLEAF
+        trees_rarity: 600
+        trees:
+          - SWAMP_TREE_1
+          - SWAMP_TREE_2
+          - SWAMP_TREE_2
+          - WARM_SWAMP_TREE_1
+          - WARM_SWAMP_TREE_1
+          - WARM_SWAMP_TREE_2
+          - MUSHROOM_2
+          - MUSHROOM_3
+      warm_swamp:
+        min_temperature: 0.7
+        biome: MANGROVE_SWAMP
+        blocks:
+          - MUD
+          - MUD
+          - MUD
+          - MOSS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - GRASS
+          - GRASS
+          - TALL_GRASS
+          - BIG_DRIPLEAF
+          - MOSS_CARPET
+        trees_rarity: 800
+        trees:
+          - WARM_SWAMP_TREE_1
+          - WARM_SWAMP_TREE_2
+  level_1:
+    min_height: 71
+    biomes:
+      frozen_plains:
+        min_temperature: -1.0
+        biome: SNOWY_TAIGA
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+          - ANDESITE
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 600
+        trees:
+          - COLD_TREE_1
+          - COLD_TREE_2
+          - COLD_TREE_3
+      frozen_plains_to_forest:
+        min_temperature: -0.5
+        biome: SNOWY_PLAINS
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 12
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+          - STONE_BUTTON
+        trees_rarity: 600
+        trees:
+          - COLD_TREE_1
+          - COLD_TREE_2
+          - MIXED_OAK_1
+      forest:
+        min_temperature: -0.4
+        biome: FOREST
+        blocks:
+          - MOSS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 12
+        decorations:
+          - STONE_BUTTON
+          - OAK_BUTTON
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - PINK_TULIP
+          - DANDELION
+          - BLUE_ORCHID
+          - POPPY
+          - AZURE_BLUET
+        trees_rarity: 700
+        trees:
+          - MIXED_OAK_1
+          - MIXED_OAK_1
+          - MIXED_OAK_2
+          - MIXED_OAK_2
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_2
+          - MIXED_BIRCH_2
+          - TWILIGHT
+          - CAMPFIRE
+          - PILLAR
+          - FALLEN_TREE
+          - MUSHROOM_3
+      forest_to_desert:
+        min_temperature: 0.5
+        biome: BIRCH_FOREST
+        blocks:
+          - ANDESITE
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 60
+        decorations:
+          - STONE_BUTTON
+      desert:
+        min_temperature: 0.6
+        biome: DESERT
+        blocks:
+          - SAND
+          - SAND
+          - SAND
+          - SANDSTONE
+          - SANDSTONE
+        decoration_rarity: 96
+        decorations:
+         - BIRCH_BUTTON
+         - SANDSTONE_SLAB
+        trees_rarity: 2000
+        trees:
+          - DRIED_1
+          - SANDSTONE_RUIN_1
+          - SANDSTONE_RUIN_2
+          - SANDSTONE_RUIN_3
+          - SANDSTONE_RUIN_4
+          - SANDSTONE_RUIN_5
+          - SANDSTONE_RUIN_6
+          - SANDSTONE_RUIN_7
+          - BONES
+  level_2:
+    min_height: 101
+    biomes:
+      stone_and_ice:
+        min_temperature: -1.0
+        biome: SNOWY_TAIGA
+        blocks:
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - ANDESITE
+        decoration_rarity: 16
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 650
+        trees:
+          - COLD_TREE_1
+          - COLD_TREE_1
+          - COLD_TREE_2
+          - COLD_TREE_2
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+      stone_and_ice_to_mixed:
+        min_temperature: -0.5
+        biome: DARK_FOREST
+        blocks:
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - ANDESITE
+        decoration_rarity: 4
+        decorations:
+          - SNOW
+          - SNOW
+          - OAK_BUTTON
+          - GRASS
+          - GRASS
+        trees_rarity: 800
+        trees:
+          - COLD_TREE_1
+          - COLD_TREE_2
+          - MIXED_OAK_1
+      mixed_forest:
+        min_temperature: -0.4
+        biome: FLOWER_FOREST
+        blocks:
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - MOSS_BLOCK
+        decoration_rarity: 24
+        decorations:
+          - OAK_BUTTON
+          - BIRCH_BUTTON
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - PINK_TULIP
+          - DANDELION
+          - BLUE_ORCHID
+          - POPPY
+          - AZURE_BLUET
+          - ALLIUM
+        trees_rarity: 600
+        trees:
+          - MIXED_OAK_1
+          - MIXED_OAK_1
+          - MIXED_OAK_2
+          - MIXED_OAK_2
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_2
+          - MIXED_BIRCH_2
+          - CAMPFIRE
+          - FALLEN_TREE
+      mixed_forest_to_stone_sandstone:
+        min_temperature: 0.5
+        biome: FOREST
+        blocks:
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - MOSS_BLOCK
+          - MOSS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - OAK_BUTTON
+          - GRASS
+          - GRASS
+          - MOSS_CARPET
+          - MOSS_CARPET
+        trees_rarity: 1400
+        trees:
+          - MIXED_OAK_1
+          - MIXED_OAK_1
+          - MIXED_OAK_2
+          - MIXED_OAK_2
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_1
+          - MIXED_BIRCH_2
+          - MIXED_BIRCH_2
+          - SCARECROW
+          - MUSHROOM_3
+          - MUSHROOM_4
+      stone_sandstone_jungle:
+        min_temperature: 0.6
+        biome: BAMBOO_JUNGLE
+        blocks:
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - SAND
+          - MOSS_BLOCK
+          - MOSS_BLOCK
+        decoration_rarity: 4
+        decorations:
+          - STONE_BUTTON
+          - GRASS
+          - TALL_GRASS
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+        trees_rarity: 1200
+        trees:
+          - JUNGLE_1
+          - JUNGLE_1
+          - JUNGLE_2
+          - JUNGLE_2
+          - JUNGLE_BUSH_1
+          - JUNGLE_BUSH_2
+  level_3:
+    min_height: 111
+    biomes:
+      ice_spikes:
+        min_temperature: -1.0
+        biome: ICE_SPIKES
+        blocks:
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - POWDER_SNOW
+          - POWDER_SNOW
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 600
+        trees:
+          - ICE_SPIKE_2
+          - ICE_SPIKE_3
+          - ICE_SPIKE_4
+      ice_spikes_to_dense:
+        min_temperature: -0.7
+        biome: ICE_SPIKES
+        blocks:
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - COARSE_DIRT
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+          - BIRCH_BUTTON
+        trees_rarity: 1200
+        trees:
+          - DENCE_1
+          - DENCE_1
+          - DENCE_1
+          - DENCE_1
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+      dense_forest:
+        min_temperature: -0.6
+        biome: OLD_GROWTH_PINE_TAIGA
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+          - COARSE_DIRT
+        decoration_rarity: 6
+        decorations:
+          - STONE_BUTTON
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+        trees_rarity: 800
+        trees:
+          - DENCE_1
+      dense_forest_to_frozen:
+        min_temperature: -0.6
+        biome: SNOWY_TAIGA
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+        trees_rarity: 800
+        trees:
+          - DENCE_1
+          - DARK_1
+          - DARK_2
+          - ICE_SPIKE_1
+      frozen_tall_dark_forest:
+        min_temperature: -0.3
+        biome: DARK_FOREST
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 600
+        trees:
+          - DARK_1
+          - DARK_1
+          - DARK_2
+          - DARK_2
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+          - FROZEN
+      frozen_tall_dark_forest_to_jungle:
+        min_temperature: 0.5
+        biome: SPARSE_JUNGLE
+        blocks:
+          - MOSS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6 #blocks per decoration
+        decorations:
+          - STONE_BUTTON
+          - BIRCH_BUTTON
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - GRASS
+          - GRASS
+          - GRASS
+          - GRASS
+          - AZALEA
+        trees_rarity: 1200 #blocks per tree
+        trees:
+          - DARK_1
+          - DARK_1
+          - DARK_2
+          - DARK_2
+          - JUNGLE_1
+          - JUNGLE_1
+          - JUNGLE_2
+          - JUNGLE_2
+          - JUNGLE_BUSH_1
+          - JUNGLE_BUSH_1
+          - JUNGLE_BUSH_2
+          - JUNGLE_BUSH_2
+          - MELON
+      jungle:
+        min_temperature: 0.6
+        biome: JUNGLE
+        blocks:
+          - MOSS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - MOSS_CARPET
+          - MOSS_CARPET
+          - BIRCH_BUTTON
+          - GRASS
+          - TALL_GRASS
+        trees_rarity: 1000
+        trees:
+          - JUNGLE_2
+          - JUNGLE_2
+          - JUNGLE_3
+          - JUNGLE_4
+          - JUNGLE_4
+          - JUNGLE_BUSH_1
+          - JUNGLE_BUSH_1
+          - JUNGLE_BUSH_2
+          - JUNGLE_BUSH_2
+          - MELON
+  level_4:
+    min_height: 151
+    biomes:
+      ice_spikes2:
+        min_temperature: -1.0
+        biome: ICE_SPIKES
+        blocks:
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - POWDER_SNOW
+          - POWDER_SNOW
+        decoration_rarity: 12
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - BIRCH_BUTTON
+          - STONE_BUTTON
+        trees_rarity: 600
+        trees:
+          - ICE_SPIKE_2
+          - ICE_SPIKE_2
+          - ICE_SPIKE_3
+          - ICE_SPIKE_3
+          - ICE_SPIKE_4
+          - ICE_SPIKE_4
+          - FROZEN
+      ice_spikes_to_frozen_tall_dark_forest:
+        min_temperature: -0.5
+        biome: ICE_SPIKES
+        blocks:
+          - PACKED_ICE
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 1200
+        trees:
+          - TALL_DARK_1
+          - TALL_DARK_1
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+      frozen_tall_dark_forest:
+        min_temperature: -0.4
+        biome: SNOWY_TAIGA
+        blocks:
+          - PACKED_ICE
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 12
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+          - BIRCH_BUTTON
+        trees_rarity: 1000
+        trees:
+          - TALL_DARK_1
+          - TALL_DARK_1
+          - TALL_DARK_1
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+      frozen_tall_dark_forest_to_stone_sandstone:
+        min_temperature: 0.4
+        biome: TAIGA
+        blocks:
+          - COARSE_DIRT
+          - SANDSTONE
+          - ANDESITE
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 12
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - SNOW
+          - BIRCH_BUTTON
+        trees_rarity: 1600
+        trees:
+          - TALL_DARK_1
+          - TALL_DARK_2
+      stone_sandstone:
+        min_temperature: 0.5
+        biome: STONY_PEAKS
+        blocks:
+          - GRASS_BLOCK
+          - GRASS_BLOCK
+          - TERRACOTTA
+          - SANDSTONE
+          - ANDESITE
+          - ANDESITE
+        decoration_rarity: 24
+        decorations:
+          - STONE_BUTTON
+          - BIRCH_BUTTON
+          - DEAD_BUSH
+        trees_rarity: 2000
+        trees:
+          - DRIED_DARK_1
+          - DRIED_DARK_2
+  level_5:
+    min_height: 161
+    biomes:
+      tall_ice_spikes:
+        min_temperature: -1.0
+        biome: ICE_SPIKES
+        blocks:
+          - BLUE_ICE
+          - BLUE_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - POWDER_SNOW
+          - POWDER_SNOW
+        decoration_rarity: 12
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 300
+        trees:
+          - ICE_SPIKE_4
+      frozen_tall_dark_forest_to_tall_ice:
+        min_temperature: -0.5
+        biome: FROZEN_PEAKS
+        blocks:
+          - BLUE_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - POWDER_SNOW
+        decoration_rarity: 10
+        decorations:
+          - SNOW
+          - SNOW
+          - SNOW
+          - STONE_BUTTON
+        trees_rarity: 1600
+        trees:
+          - TALL_DARK_1
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - ICE_SPIKE_3
+          - ICE_SPIKE_4
+      frozen_tall_dark_forest:
+        min_temperature: -0.4
+        biome: SNOWY_SLOPES
+        blocks:
+          - PACKED_ICE
+          - PACKED_ICE
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRASS_BLOCK
+        decoration_rarity: 6
+        decorations:
+          - SNOW
+        trees_rarity: 1200
+        trees:
+          - TALL_DARK_1
+          - TALL_DARK_1
+          - TALL_DARK_2
+          - TALL_DARK_2
+          - ICE_SPIKE_1
+          - ICE_SPIKE_2
+      stony_hills_with_gravel_to_frozen_forest:
+        min_temperature: 0.4
+        biome: WINDSWEPT_GRAVELLY_HILLS
+        blocks:
+          - SNOW_BLOCK
+          - SNOW_BLOCK
+          - GRAVEL
+          - GRAVEL
+          - GRAVEL
+          - GRASS_BLOCK
+        decoration_rarity: 60
+        decorations:
+          - STONE_BUTTON
+          - STONE_PRESSURE_PLATE
+      stony_hills_with_gravel:
+        min_temperature: 0.5
+        biome: WINDSWEPT_GRAVELLY_HILLS
+        blocks:
+          - STONE
+          - GRAVEL
+          - GRAVEL
+          - GRASS_BLOCK
+        decoration_rarity: 8
+        decorations:
+          - STONE_BUTTON
+          - STONE_PRESSURE_PLATE
+      stony_hills_with_gravel_to_terracotta_hills:
+        min_temperature: 0.7
+        biome: WINDSWEPT_GRAVELLY_HILLS
+        blocks:
+          - TERRACOTTA
+          - TERRACOTTA
+          - GRAVEL
+          - GRAVEL
+          - GRAVEL
+          - GRASS_BLOCK
+        decoration_rarity: 20
+        decorations:
+          - STONE_BUTTON
+          - DEAD_BUSH
+      terracotta_hills:
+        min_temperature: 0.8
+        biome: BADLANDS
+        blocks:
+          - TERRACOTTA
+          - RED_TERRACOTTA
+          - YELLOW_TERRACOTTA
+          - GRASS_BLOCK
+        decoration_rarity: 16
+        decorations:
+          - STONE_BUTTON
+          - DEAD_BUSH
+          - DEAD_BUSH
+underground_level:
+  level_0:
+    min_height: 60
+    biomes:
+      chilly:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - DIRT
+      swampy:
+        min_temperature: -0.4
+        blocks:
+          - CLAY
+          - MUD
+          - MUD
+      deserty:
+        min_temperature: 0.5
+        blocks:
+          - PACKED_MUD
+          - MUD_BRICKS
+          - SAND
+          - SAND
+          - SAND
+          - SAND
+          - SANDSTONE
+          - SANDSTONE
+          - SANDSTONE
+  level_1:
+    min_height: 71
+    biomes:
+      cold:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - DIRT
+      moderate:
+        min_temperature: -0.4
+        blocks:
+          - GRANITE
+          - DIRT
+          - DIRT
+          - DIRT
+          - ROOTED_DIRT
+      2deserty:
+        min_temperature: 0.5
+        blocks:
+          - PACKED_MUD
+          - MUD_BRICKS
+          - SAND
+          - SAND
+          - SAND
+          - SAND
+          - SANDSTONE
+          - SANDSTONE
+          - SANDSTONE
+  level_2:
+    min_height: 101
+    biomes:
+      2cold:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - SNOW_BLOCK
+      2moderate:
+        min_temperature: -0.4
+        blocks:
+          - GRANITE
+          - DIRT
+          - DIRT
+          - DIRT
+          - ROOTED_DIRT
+      jungle:
+        min_temperature: 0.5
+        blocks:
+          - DIRT
+          - DIRT
+          - MOSS_BLOCK
+          - ROOTED_DIRT
+          - ROOTED_DIRT
+  level_3:
+    min_height: 111
+    biomes:
+      very_cold:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - PACKED_ICE
+          - SNOW_BLOCK
+      cold_forest:
+        min_temperature: -0.4
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - SNOW_BLOCK
+      2jungle:
+        min_temperature: 0.5
+        blocks:
+          - DIRT
+          - DIRT
+          - MOSS_BLOCK
+          - ROOTED_DIRT
+          - ROOTED_DIRT
+  level_4:
+    min_height: 151
+    biomes:
+      3very_cold:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - PACKED_ICE
+          - SNOW_BLOCK
+      3cold_forest:
+        min_temperature: -0.4
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - SNOW_BLOCK
+      3jungle:
+        min_temperature: 0.5
+        blocks:
+          - DIRT
+          - DIRT
+          - MOSS_BLOCK
+          - ROOTED_DIRT
+          - ROOTED_DIRT
+  level_5:
+    min_height: 161
+    biomes:
+      4very_cold:
+        min_temperature: -1.0
+        blocks:
+          - COARSE_DIRT
+          - PACKED_ICE
+          - SNOW_BLOCK
+      4cold_forest:
+        min_temperature: -0.4
+        blocks:
+          - COARSE_DIRT
+          - DIRT
+          - SNOW_BLOCK
+      terracotta:
+        min_temperature: 0.5
+        blocks:
+          - DIRT
+          - DIRT
+          - MOSS_BLOCK
+          - ROOTED_DIRT
+          - ROOTED_DIRT
