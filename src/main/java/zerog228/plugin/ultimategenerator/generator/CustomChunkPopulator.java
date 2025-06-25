@@ -13,9 +13,7 @@ import com.sk89q.worldedit.math.BlockVector3;
 import com.sk89q.worldedit.math.transform.AffineTransform;
 import com.sk89q.worldedit.session.ClipboardHolder;
 import org.bukkit.Bukkit;
-import org.bukkit.Chunk;
 import org.bukkit.Location;
-import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.generator.BlockPopulator;
 import org.bukkit.generator.LimitedRegion;
@@ -118,7 +116,7 @@ public class CustomChunkPopulator extends BlockPopulator {
             if (new Random().nextInt(trees_rarity) == 0) {
                 List<String> trees_schems = biomeToTrees.get(biome).getValue0();
                 String tree_name = trees_schems.get(new Random().nextInt(trees_schems.size()));
-                File schematic = new File(UltimateGenerator.getPlugin().getDataFolder() + File.separator + "schematics/trees/"+tree_name+".schem");
+                File schematic = new File(UltimateGenerator.getPlugin().getDataFolder() + File.separator + "schematics/trees/" +tree_name+".schem");
                 Location loc = new Location(Bukkit.getServer().getWorld("world"),
                         chunkX*16+x, y-1, chunkZ*16+z);
                 new BukkitRunnable() {
